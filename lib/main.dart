@@ -3,10 +3,12 @@ import 'package:flutter_advanced_template/generated/l10n.dart';
 import 'package:flutter_advanced_template/routes/index.dart';
 import 'package:flutter_advanced_template/services/version.service.dart';
 import 'package:flutter_advanced_template/theme/theme.dart';
+import 'package:hive/hive.dart';
 
 void main() {
   S.load(const Locale("en"));
   AppVersionService.init();
+  _initHive();
   runApp(const MyApp());
 }
 
@@ -23,4 +25,9 @@ class MyApp extends StatelessWidget {
       routes: appRoutes,
     );
   }
+}
+
+void _initHive() {
+  Hive.init("hive_stored_space");
+  // Hive.registerAdapter(ExampleObjAdapter());
 }
