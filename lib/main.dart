@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_advanced_template/generated/l10n.dart';
 import 'package:flutter_advanced_template/theme/theme.dart';
 
 void main() {
+  S.load(const Locale("en"));
   runApp(const MyApp());
 }
 
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Advanced Template',
       theme: appTheme,
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
