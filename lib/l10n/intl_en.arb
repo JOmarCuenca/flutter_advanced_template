@@ -1,5 +1,6 @@
 {
     "@@locale": "en",
     "appName": "My App",
-    "appTitle": "My App"
+    "appTitle": "My App",
+    "loadingDots": "Loading..."
 }

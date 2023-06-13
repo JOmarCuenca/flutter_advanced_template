@@ -69,6 +69,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Loading...`
+  String get loadingDots {
+    return Intl.message(
+      'Loading...',
+      name: 'loadingDots',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
