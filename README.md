@@ -4,6 +4,12 @@ IDK about you, but I'm tired of re-creating flutter projects and installing basi
 
 I created this free template if you wanna skip all that.
 
+## Additional Features
+
+### Actions
+
+I added a simple Github Action so that when pushes to the main branch of your project, all unit tests are running, to let you know when something is broken.
+
 ## Useful commands
 
 ### Generate string utils from `.arb` files
