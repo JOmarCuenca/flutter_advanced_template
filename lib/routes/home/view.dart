@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_advanced_template/generated/l10n.dart';
 import 'package:flutter_advanced_template/services/version.service.dart';
+import 'package:flutter_advanced_template/widgets/text/h1.widget.dart';
 import 'package:pmvvm/mvvm_builder.widget.dart';
 import 'package:pmvvm/views/stateless.view.dart';
 
@@ -33,7 +34,7 @@ class _HomeView extends StatelessView<HomeViewModel> {
           children: <Widget>[
             Column(
               children: [
-                const Text("Current app version"),
+                const H1("Current app version"),
                 FutureBuilder(
                   future: AppVersionService.appVersion,
                   builder: (context, snapshot) {
@@ -86,7 +87,7 @@ class _EasterEgg extends StatelessWidget {
     return (message?.isNotEmpty == true)
         ? Padding(
             padding: const EdgeInsets.all(8),
-            child: Text(message!),
+            child: H1Heavy(message!),
           )
         : const SizedBox.shrink();
   }
